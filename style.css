@@ -1,0 +1,36 @@
+.navbar {
+	margin: 20px 0;
+}
+
+.navbar a {
+	background-color: lightgray;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.ipsums {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column, .last-col {
+	width: 24%;
+}
+
+@media only screen and (max-width: 834px) {
+	.navbar {
+		display: none;
+	}
+
+	.column {
+		width: 32%;
+	}
+
+	.last-col {
+		width: 100%;
+	}
+
+	.ipsums {
+		flex-wrap: wrap;
+	}
+}
